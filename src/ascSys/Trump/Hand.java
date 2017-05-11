@@ -10,4 +10,8 @@ public class Hand {
 	public void addCard(Card cards){
 		this.cards.add(cards);
 	}
+
+	public Card pickUpCard(){
+		return this.cards.remove(0);
+	}
 }
