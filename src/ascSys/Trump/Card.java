@@ -18,6 +18,9 @@ public class Card {
 		return num;
 	}
 
-
+	@Override
+	public String toString(){
+		return this.suit.toString() +"_"+this.num.toString();
+	}
 
 }
