@@ -24,9 +24,26 @@ public class NumTest {
 		Num num = J;
 
 		int actual	 = num.getScore();
-		int expected = 2;
+		int expected = 10;
 		assertThat(actual, is(expected));
 	}
+	@Test
+	public void NumクラスのQからgetScoreメソッドで10が返ってくる(){
 
+		Num num = Q;
+
+		int actual	 = num.getScore();
+		int expected = 10;
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void NumクラスのKからgetScoreメソッドで10が返ってくる(){
+
+		Num num = K;
+
+		int actual	 = num.getScore();
+		int expected = 10;
+		assertThat(actual, is(expected));
+	}
 
 }
