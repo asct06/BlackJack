@@ -29,6 +29,9 @@ public class Card {
 	}
 	@Override
 	public String toString(){
+		if(this.upside == false){
+			return "*_*";
+		}
 		return this.suit.toString() +"_"+this.num.toString();
 	}
 

@@ -45,6 +45,13 @@ public class CardTest {
 		assertThat(actual, is(expected));
 	}
 	
-	
+	@Test
+	public void CardクラスでupSideが裏の時にtoStringメソッドで米米が返ってくる(){
+		
+		String actual = sut.toString();
+		String expected = "*_*";
+		assertThat(actual,is(expected));
+		
+	}
 
 }
