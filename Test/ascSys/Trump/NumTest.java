@@ -17,7 +17,7 @@ public class NumTest {
 		int expected = 2;
 		assertThat(actual, is(expected));
 	}
-	
+
 	@Test
 	public void NumクラスのJからgetScoreメソッドで10が返ってくる(){
 
@@ -27,6 +27,7 @@ public class NumTest {
 		int expected = 10;
 		assertThat(actual, is(expected));
 	}
+
 	@Test
 	public void NumクラスのQからgetScoreメソッドで10が返ってくる(){
 
@@ -36,6 +37,7 @@ public class NumTest {
 		int expected = 10;
 		assertThat(actual, is(expected));
 	}
+
 	@Test
 	public void NumクラスのKからgetScoreメソッドで10が返ってくる(){
 

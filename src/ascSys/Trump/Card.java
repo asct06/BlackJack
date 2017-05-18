@@ -27,6 +27,7 @@ public class Card {
 	public void turnUpSide() {
 		this.upside = !(this.upside);
 	}
+
 	@Override
 	public String toString(){
 		if(this.upside == false){
