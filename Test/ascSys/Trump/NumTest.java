@@ -17,6 +17,16 @@ public class NumTest {
 		int expected = 2;
 		assertThat(actual, is(expected));
 	}
+	
+	@Test
+	public void NumクラスのJからgetScoreメソッドで10が返ってくる(){
+
+		Num num = J;
+
+		int actual	 = num.getScore();
+		int expected = 2;
+		assertThat(actual, is(expected));
+	}
 
 
 }
