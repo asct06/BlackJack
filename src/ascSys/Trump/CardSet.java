@@ -14,10 +14,13 @@ public class CardSet {
 	public Card pickUpCard(){
 		return this.cards.remove(0);
 	}
-	
+
 	public int getSize() {
 		return this.cards.size();
-		
+
 	}
 
+	public  List<Card> getCards(){
+		return this.cards;
+	}
 }

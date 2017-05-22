@@ -39,5 +39,6 @@ public class Card {
 		}
 		return this.suit.toString() +"_"+this.num.toString();
 	}
+	
 
 }

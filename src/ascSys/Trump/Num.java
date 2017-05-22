@@ -19,7 +19,7 @@ public enum Num {
 		public int getScore(){
 			return 10;
 		}
-	};
+	},;
 
 	public int getScore() {
 
