@@ -28,6 +28,10 @@ public class Card {
 		this.upside = !(this.upside);
 	}
 
+	public int getScore(){
+		return this.num.getScore();
+	}
+
 	@Override
 	public String toString(){
 		if(this.upside == false){

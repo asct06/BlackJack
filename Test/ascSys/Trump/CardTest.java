@@ -44,14 +44,23 @@ public class CardTest {
 		boolean expected = true;
 		assertThat(actual, is(expected));
 	}
-	
+
 	@Test
 	public void CardクラスでupSideが裏の時にtoStringメソッドで米米が返ってくる(){
-		
+
 		String actual = sut.toString();
 		String expected = "*_*";
 		assertThat(actual,is(expected));
-		
+
 	}
+
+	@Test
+	public void getScoreメソッドで8が返ってくる() {
+
+		int actual = sut.getScore();
+		int expected = 8;
+		assertThat(actual, is(expected));
+	}
+
 
 }
