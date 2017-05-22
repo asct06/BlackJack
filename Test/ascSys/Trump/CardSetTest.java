@@ -7,14 +7,13 @@ import org.junit.Test;
 
 public class CardSetTest {
 
-	private Suit cards;
 
 	@Test
 	public void addCardメソッドで一枚カードを加えてpickupCardメソッドを使用して抜いたカードが同じか確認する() {
 
 		CardSet sut = new CardSet();
 
-		Card expected = new Card(this.cards, null);
+		Card expected = new Card(null, null);
 		sut.addCard(expected);
 		Card actual = sut.pickUpCard();
 
@@ -27,7 +26,7 @@ public class CardSetTest {
 
 		CardSet sut = new CardSet();
 
-		Card card = new Card(this.cards, null);
+		Card card = new Card(null, null);
 		sut.addCard(card);
 		sut.addCard(card);
 		int  actual = sut.getSize();
@@ -41,7 +40,7 @@ public class CardSetTest {
 
 		CardSet sut = new CardSet();
 
-		Card card = new Card(this.cards, null);
+		Card card = new Card(null, null);
 		for(int i = 0 ; i < 5; i++){
 			sut.addCard(card);
 		}
@@ -52,4 +51,6 @@ public class CardSetTest {
 
 		assertThat(actual,is(expected) );
 	}
+
+
 }
