@@ -57,7 +57,7 @@ public class CardTest {
 	@Test
 	public void getScoreメソッドで8が返ってくる() {
 
-		int actual = sut.getScore();
+		int actual = sut.getScore(true);
 		int expected = 8;
 		assertThat(actual, is(expected));
 	}

@@ -8,44 +8,45 @@ import org.junit.Test;
 
 public class NumTest {
 
+
+
 	@Test
-	public void NumクラスのN2からgetScoreメソッドで2が返ってくる(){
+	public void NumクラスのN2からgetScorebooleancahgeAメソッドで2が返ってくる(){
 
 		Num num = N2;
 
-		int actual	 = num.getScore();
+		int actual	 = num.getScore(true);
 		int expected = 2;
 		assertThat(actual, is(expected));
 	}
 
 	@Test
-	public void NumクラスのJからgetScoreメソッドで10が返ってくる(){
+	public void NumクラスのJからgetScorebooleancahgeAメソッドで10が返ってくる(){
 
 		Num num = J;
 
-		int actual	 = num.getScore();
+		int actual	 = num.getScore(false);
 		int expected = 10;
 		assertThat(actual, is(expected));
 	}
 
 	@Test
-	public void NumクラスのQからgetScoreメソッドで10が返ってくる(){
+	public void NumクラスのAからgetScorebooleancahgeAメソッドでtrueのとき11が返ってくる(){
 
-		Num num = Q;
+		Num num = A;
 
-		int actual	 = num.getScore();
-		int expected = 10;
+		int actual	 = num.getScore(true);
+		int expected = 11;
 		assertThat(actual, is(expected));
 	}
 
 	@Test
-	public void NumクラスのKからgetScoreメソッドで10が返ってくる(){
+	public void NumクラスのAからgetScorebooleancahgeAメソッドfalseのとき1が返ってくる(){
 
-		Num num = K;
+		Num num = A;
 
-		int actual	 = num.getScore();
-		int expected = 10;
+		int actual	 = num.getScore(false);
+		int expected = 1;
 		assertThat(actual, is(expected));
 	}
-
 }

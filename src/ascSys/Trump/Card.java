@@ -28,8 +28,8 @@ public class Card {
 		this.upside = !(this.upside);
 	}
 
-	public int getScore(){
-		return this.num.getScore();
+	public int getScore(boolean changeA){
+		return this.num.getScore(changeA);
 	}
 
 	@Override
@@ -39,6 +39,6 @@ public class Card {
 		}
 		return this.suit.toString() +"_"+this.num.toString();
 	}
-	
+
 
 }
