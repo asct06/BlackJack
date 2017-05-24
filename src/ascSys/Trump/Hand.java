@@ -6,11 +6,21 @@ public class Hand extends CardSet {
 
 	public int getTotalScore() {
 		int totalScore = 0;
+		boolean changeA = true;
 
 		for(Card card :super.getCards()){
-			totalScore += card.getScore(true);
-		}
 
+			totalScore += card.getScore(changeA);
+			if(card.getScore(changeA) == 11)changeA = false;
+		}
+		if(totalScore > 21){
+			totalScore = 0;
+			for(Card card :super.getCards()){
+
+				totalScore += card.getScore(false);
+			}
+
+		}
 		return totalScore;
 	}
 

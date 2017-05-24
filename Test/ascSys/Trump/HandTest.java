@@ -56,7 +56,7 @@ public class HandTest {
 		assertThat(actual,is(expected));
 	}
 
-/*	@Test
+	@Test
 	public void HandクラスにJとKとAを加えてgetTotalScoreメソッドで21が返ってくるテスト() {
 
 		sut.addCard(new Card(DIA,J));
@@ -66,8 +66,18 @@ public class HandTest {
 		int actual = sut.getTotalScore();
 		int expected = 21;
 		assertThat(actual,is(expected));
-	}*/
+	}
 
+	@Test
+	public void HandクラスにAとAを加えてgetTotalScoreメソッドで12が返ってくるテスト() {
+
+		sut.addCard(new Card(DIA,A));
+		sut.addCard(new Card(DIA,A));
+
+		int actual = sut.getTotalScore();
+		int expected = 12;
+		assertThat(actual,is(expected));
+	}
 
 
 }
